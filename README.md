@@ -1,7 +1,7 @@
 
 #  snRNA-seq Data Preprocessing for Human Optic Nerve and Optic Nerve Head Endothelial Cells
 
-This repository contains a Python script `convert_h5ad_to_parquet.py` that processes a `.h5ad` single-nucleus RNA sequencing (snRNA-seq) dataset and converts it into optimized formats (`.parquet`) suitable for sharing and downstream analysis.
+This repository contains a Python script `processing.py` that processes a `.h5ad` single-nucleus RNA sequencing (snRNA-seq) dataset and converts it into optimized formats (`.parquet`) suitable for sharing and downstream analysis.
 
 The dataset is hosted on Hugging Face:  
 [View on Hugging Face](https://huggingface.co/datasets/longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells)
