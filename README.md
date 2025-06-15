@@ -1,20 +1,20 @@
 
-# 🧬 snRNA-seq Data Preprocessing for Human Optic Nerve and Optic Nerve Head Endothelial Cells
+#  snRNA-seq Data Preprocessing for Human Optic Nerve and Optic Nerve Head Endothelial Cells
 
 This repository contains a Python script `convert_h5ad_to_parquet.py` that processes a `.h5ad` single-nucleus RNA sequencing (snRNA-seq) dataset and converts it into optimized formats (`.parquet`) suitable for sharing and downstream analysis.
 
 The dataset is hosted on Hugging Face:  
-👉 [View on Hugging Face](https://huggingface.co/datasets/longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells)
+[View on Hugging Face](https://huggingface.co/datasets/longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells)
 
 ---
 
-## 📂 Dataset Summary
+## Dataset Summary
 
 This dataset consists of single-nucleus RNA-sequencing (snRNA-seq) data of **human optic nerve** and **optic nerve head** endothelial cells. It is structured in the `.h5ad` format, commonly used in the AnnData ecosystem for storing large-scale omics data, particularly from `scanpy`.
 
 ---
 
-## ⚙️ What the Script Does (`convert_h5ad_to_parquet.py`)
+## What the Script Does (`processing.py`)
 
 The script converts the raw `.h5ad` file into more accessible and interoperable `.parquet` files for easier analysis and integration. It performs the following steps:
 
@@ -48,7 +48,7 @@ The script converts the raw `.h5ad` file into more accessible and interoperable 
 
 ---
 
-## 🧪 Requirements
+## Requirements
 
 Install the required packages before running:
 
@@ -58,7 +58,7 @@ pip install pandas anndata pyarrow
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Replace the `H5AD_FILE_PATH` in the script with the path to your `.h5ad` file:
 
@@ -83,16 +83,17 @@ snRNA-seq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells/
 
 ---
 
-## 📌 Notes
+## Notes
 
 - This script **does not export** the `obs` (cell metadata) from the `.h5ad` file. You can modify it if needed.
 - Output files are in `.parquet` format, which is efficient for big data workflows and compatible with tools like Apache Spark, Pandas, and cloud platforms.
 
 ---
 
-## 📚 References
+## References
 
-- Dataset: [longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells](https://huggingface.co/datasets/longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells)
+- Source Dataset:https: 1.//datasets.cellxgene.cziscience.com/f5b09167-e4b5-4f32-b7b4-f0b7c402a4c4.h5ad 2. https://cellxgene.cziscience.com/collections/05e3d0fc-c9dd-4f14-9163-2b242b3bb5c2
+- Final Output Dataset: [longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells](https://huggingface.co/datasets/longevity-db/snRNAseq_of_human_optic_nerve_and_optic_nerve_head_endothelial_cells)
 - File Format: [Anndata Documentation](https://anndata.readthedocs.io/en/latest/)
 - Hugging Face Datasets: [https://huggingface.co/datasets](https://huggingface.co/datasets)
 
